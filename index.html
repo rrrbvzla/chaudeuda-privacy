@@ -1,30 +1,589 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>Política de Privacidad - ChauDeuda</title>
-<style>
-  body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; }
-  h1 { color: #0F1629; }
-  h2 { color: #333; }
-</style>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>ChauDeuda — Salí de tus deudas para siempre</title>
+  <meta name="description" content="Organizá tus deudas, controlá tus gastos y sabé exactamente cuándo vas a ser libre. Gratis, sin publicidad."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700;8..144,800&display=swap"/>
+  <link rel="stylesheet" href="landing-styles.css"/>
 </head>
 <body>
-<h1>Política de Privacidad de ChauDeuda</h1>
-<p><em>Última actualización: marzo 2026</em></p>
-<h2>1. Información que recopilamos</h2>
-<p>ChauDeuda recopila: correo electrónico, datos de deudas que el usuario ingresa y historial de pagos.</p>
-<h2>2. Cómo usamos tu información</h2>
-<p>Únicamente para permitirte acceder a tu cuenta, guardar tus deudas y calcular tu plan de pago.</p>
-<h2>3. Almacenamiento de datos</h2>
-<p>Tus datos se almacenan de forma segura en servidores en la nube. Cada usuario solo puede ver sus propios datos.</p>
-<h2>4. No compartimos tu información</h2>
-<p>No vendemos ni compartimos tu información personal con terceros.</p>
-<h2>5. Seguridad</h2>
-<p>Implementamos autenticación de usuarios y políticas de acceso para proteger tu información.</p>
-<h2>6. Tus derechos</h2>
-<p>Podés solicitar la eliminación de tu cuenta escribiéndonos a chaudeuda@gmail.com</p>
-<h2>7. Contacto</h2>
-<p>chaudeuda@gmail.com</p>
+
+<!-- ── NAV ─────────────────────────────────────────────────── -->
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark" aria-hidden="true">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+          <path d="M12 2v20M8 6h5a3 3 0 0 1 0 6H9a3 3 0 0 0 0 6h5" stroke="#0F1629" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M7 13l3 3 7-7" stroke="#5DCAA5" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      ChauDeuda
+    </a>
+    <nav class="nav-links">
+      <a href="#funcionalidades">Funcionalidades</a>
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#por-que">Por qué ChauDeuda</a>
+    </nav>
+    <a href="#descargar" class="btn btn-primary btn-sm">Descargar</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ── HERO ───────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow reveal">
+        <span class="dot"></span>
+        Hecha en Argentina · Gratis
+      </span>
+      <h1 class="hero-title reveal reveal-delay-1">
+        Salí de tus<br/>
+        deudas <span class="accent">para siempre</span>
+      </h1>
+      <p class="hero-sub reveal reveal-delay-2">
+        Organizá tus deudas, controlá tus gastos y sabé exactamente cuándo vas a ser libre. Gratis, sin publicidad.
+      </p>
+      <div class="hero-cta reveal reveal-delay-3">
+        <a href="https://play.google.com/store/apps/details?id=com.chaudeuda.chaudeuda" target="_blank" class="btn btn-play btn-lg">
+          <span class="gp-mark">
+            <svg width="22" height="24" viewBox="0 0 22 24" fill="none">
+              <path d="M1.4 1.5C1.1 1.8 1 2.3 1 2.9v18.2c0 .6.1 1.1.4 1.4l.1.1L11 12.6v-.2L1.5 1.4l-.1.1z" fill="#0F1629"/>
+              <path d="M14 15.7L11 12.6v-.2L14 9.3l.1.1 4.2 2.4c1.2.7 1.2 1.8 0 2.5L14 15.7z" fill="#5DCAA5"/>
+              <path d="M14.1 15.6L11 12.5 1.4 22.5c.4.4 1.1.5 1.8.1l11-6.3-.1-.7z" fill="#F0997B"/>
+              <path d="M14.1 9.4l-11-6.3c-.7-.4-1.4-.3-1.8.1L11 12.5l3.1-3.1z" fill="#EF9F27"/>
+            </svg>
+          </span>
+          <span class="gp-text">
+            <small>DESCARGAR EN</small>
+            <span>Google Play</span>
+          </span>
+        </a>
+        <a href="#funcionalidades" class="btn btn-ghost btn-lg">Ver cómo funciona</a>
+      </div>
+      <ul class="hero-meta reveal reveal-delay-3">
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg> 100% gratis</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg> Sin publicidad</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg> Datos privados</li>
+      </ul>
+    </div>
+    <div class="hero-phone reveal reveal-delay-2">
+      <div class="hero-phone-glow" aria-hidden="true"></div>
+      <!-- HOY mockup -->
+      <div class="phone lg" aria-label="App preview">
+        <div class="phone-statusbar">
+          <span class="ph-num">9:41</span>
+          <span class="icons">
+            <svg width="14" height="10" viewBox="0 0 16 12" fill="none"><path d="M1 9l3-3M5 11l5-5M9 9l5-5" stroke="#EEF0F5" stroke-width="1.6" stroke-linecap="round"/></svg>
+            <svg width="14" height="10" viewBox="0 0 16 12" fill="none"><rect x="1" y="3" width="13" height="6" rx="1.5" stroke="#EEF0F5" stroke-width="1.4"/><rect x="3" y="5" width="6" height="2" rx="0.5" fill="#EEF0F5"/></svg>
+          </span>
+        </div>
+        <div class="phone-content">
+          <div class="mh-greet">
+            <div>
+              <div class="mh-greet-sub">Buen día,</div>
+              <div class="mh-greet-name">Sofía</div>
+            </div>
+            <div class="mh-greet-icons">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 1 1 12 0c0 5 2 6 2 6H4s2-1 2-6z"/><path d="M10 18a2 2 0 0 0 4 0"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19 12a7 7 0 0 0-.1-1.2l2-1.6-2-3.4-2.4 1a7 7 0 0 0-2-1.2l-.4-2.6h-4l-.4 2.6a7 7 0 0 0-2 1.2l-2.4-1-2 3.4 2 1.6A7 7 0 0 0 5 12c0 .4 0 .8.1 1.2l-2 1.6 2 3.4 2.4-1a7 7 0 0 0 2 1.2l.4 2.6h4l.4-2.6a7 7 0 0 0 2-1.2l2.4 1 2-3.4-2-1.6z"/></svg>
+            </div>
+          </div>
+
+          <div class="mh-hero">
+            <div class="mh-hero-eyebrow"><span class="dot"></span>PRÓXIMO PASO</div>
+            <div class="mh-hero-title">Tu Visa Galicia vence en 3 días</div>
+            <div class="mh-hero-sub ph-num">Pago mínimo: <b style="color:#EEF0F5">$87.500</b></div>
+            <div class="mh-hero-actions">
+              <button class="mh-btn-pri">Registrar pago</button>
+              <button class="mh-btn-gho">Mañana</button>
+            </div>
+          </div>
+
+          <div class="mh-snaps">
+            <div class="mh-snap">
+              <div class="mh-snap-head">
+                <div class="mh-snap-ico" style="background:rgba(240,153,123,0.2);color:#F0997B"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="13" rx="2.5"/><path d="M2 10h20"/></svg></div>
+                <span class="mh-snap-label">Deuda</span>
+              </div>
+              <div class="mh-snap-val">$57M</div>
+              <div class="mh-snap-sub">42,9% pagado</div>
+              <div class="mh-snap-bar"><div style="width:43%;background:#F0997B"></div></div>
+            </div>
+            <div class="mh-snap">
+              <div class="mh-snap-head">
+                <div class="mh-snap-ico" style="background:rgba(93,202,165,0.2);color:#5DCAA5"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V5M4 5l5-2 5 2 5-2v10l-5 2-5-2-5 2"/></svg></div>
+                <span class="mh-snap-label">Libre el</span>
+              </div>
+              <div class="mh-snap-val">Nov 26</div>
+              <div class="mh-snap-sub">en 8 meses</div>
+            </div>
+          </div>
+
+          <div class="mh-actions-head">ACCIONES RÁPIDAS</div>
+          <div class="mh-actions">
+            <div class="mh-action">
+              <div class="ic" style="background:rgba(93,202,165,0.15);color:#5DCAA5"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></div>
+              <span class="lb">Pago</span>
+            </div>
+            <div class="mh-action">
+              <div class="ic" style="background:rgba(141,161,255,0.15);color:#8DA1FF"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="13" rx="2.5"/><path d="M2 10h20"/></svg></div>
+              <span class="lb">Deuda</span>
+            </div>
+            <div class="mh-action">
+              <div class="ic" style="background:rgba(239,159,39,0.15);color:#EF9F27"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h13a1 1 0 0 1 1 1v2"/><path d="M3 7v10a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-9a1 1 0 0 0-1-1H5a2 2 0 0 1-2-2z"/></svg></div>
+              <span class="lb">Gasto</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROBLEMA ───────────────────────────────────────────── -->
+<section class="problem">
+  <div class="container">
+    <div class="problem-grid">
+      <div class="reveal">
+        <span class="section-eyebrow">El problema</span>
+        <h2 class="problem-quote">
+          ¿Pagás el mínimo de la tarjeta y <span class="hl-orange">no sabés cuándo</span> vas a terminar?
+        </h2>
+        <p class="problem-text">
+          En Argentina, las tasas de las tarjetas y préstamos personales son de las más altas del mundo. Pagar el mínimo todos los meses puede hacer que la deuda crezca aunque pagues — y la mayoría no tiene una forma simple de visualizar el plan completo.
+        </p>
+        <p class="problem-text" style="margin-top:14px">
+          ChauDeuda te muestra <b style="color:var(--text)">cuánto debés en total</b>, <b style="color:var(--text)">cuándo vas a ser libre</b> y <b style="color:var(--text)">qué deuda atacar primero</b> para ahorrar en intereses.
+        </p>
+      </div>
+      <div class="fact-card reveal reveal-delay-2">
+        <div class="fact-num">85<small>% TNA</small></div>
+        <div class="fact-label">Tasa promedio de tarjeta de crédito</div>
+        <div class="fact-detail">Una deuda de $100.000 pagando solo el mínimo puede convertirse en más de $250.000 en un año.</div>
+        <div class="fact-stats">
+          <div>
+            <div class="fact-stat-num" style="color:#F0997B">7 de 10</div>
+            <div class="fact-stat-label">argentinos tiene deuda activa</div>
+          </div>
+          <div>
+            <div class="fact-stat-num" style="color:#EF9F27">+30%</div>
+            <div class="fact-stat-label">crecimiento mora 2025</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FUNCIONALIDADES ────────────────────────────────────── -->
+<section class="features" id="funcionalidades">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-eyebrow">Funcionalidades</span>
+      <h2 class="section-title">Todo lo que necesitás<br/>para salir adelante</h2>
+      <p class="section-sub">Cuatro pantallas, una sola misión: que sepas exactamente qué hacer hoy para estar mejor mañana.</p>
+    </div>
+
+    <div class="feature-grid">
+      <!-- Hoy -->
+      <article class="feature-card reveal">
+        <div>
+          <div class="feature-icon green">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg>
+          </div>
+          <h3 class="feature-title">Tu día de un vistazo</h3>
+          <p class="feature-desc">Abrís la app y ya sabés qué pago tenés cerca, cuánto debés en total y cuándo vas a ser libre. Sin perderte en menúes.</p>
+        </div>
+        <div class="feature-mock">
+          <!-- mini Hoy phone -->
+          <div class="phone">
+            <div class="phone-statusbar"><span class="ph-num">9:41</span><span class="icons">●●●</span></div>
+            <div class="phone-content" style="padding:0 12px">
+              <div class="mh-greet">
+                <div><div class="mh-greet-sub">Buen día,</div><div class="mh-greet-name" style="font-size:13px">Sofía</div></div>
+              </div>
+              <div class="mh-hero">
+                <div class="mh-hero-eyebrow"><span class="dot"></span>PRÓXIMO PASO</div>
+                <div class="mh-hero-title">Visa vence en 3 días</div>
+                <div class="mh-hero-sub ph-num">Mínimo: <b style="color:#EEF0F5">$87.500</b></div>
+                <div class="mh-hero-actions">
+                  <button class="mh-btn-pri">Pagar</button>
+                  <button class="mh-btn-gho">Mañana</button>
+                </div>
+              </div>
+              <div class="mh-snaps">
+                <div class="mh-snap">
+                  <span class="mh-snap-label">Deuda</span>
+                  <div class="mh-snap-val" style="color:#F0997B">$57M</div>
+                  <div class="mh-snap-sub">42,9%</div>
+                  <div class="mh-snap-bar"><div style="width:43%;background:#F0997B"></div></div>
+                </div>
+                <div class="mh-snap">
+                  <span class="mh-snap-label">Libre el</span>
+                  <div class="mh-snap-val" style="color:#5DCAA5">Nov 26</div>
+                  <div class="mh-snap-sub">8 meses</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Deudas -->
+      <article class="feature-card reveal reveal-delay-1">
+        <div>
+          <div class="feature-icon orange">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="13" rx="2.5"/><path d="M2 10h20M6 16h4"/></svg>
+          </div>
+          <h3 class="feature-title">Gestioná tus deudas</h3>
+          <p class="feature-desc">Cargá tarjetas y préstamos en segundos. La app calcula intereses, fechas de vencimiento y progreso por cada deuda.</p>
+        </div>
+        <div class="feature-mock">
+          <div class="phone">
+            <div class="phone-statusbar"><span class="ph-num">9:41</span><span class="icons">●●●</span></div>
+            <div class="phone-content" style="padding:0 12px">
+              <div class="md-title">Mis Deudas</div>
+              <div class="md-hero">
+                <div class="md-hero-label">TOTAL DEUDA</div>
+                <div class="md-hero-val">$57.083.333</div>
+                <div class="md-hero-stats">
+                  <div><div class="md-stat-l">PAGADO</div><div class="md-stat-v" style="color:#5DCAA5">$42.9M</div></div>
+                  <div><div class="md-stat-l">INTERESES</div><div class="md-stat-v" style="color:#EF9F27">$22.9M</div></div>
+                  <div><div class="md-stat-l">ACTIVAS</div><div class="md-stat-v">3</div></div>
+                </div>
+                <div class="md-bar"><div style="width:43%"></div></div>
+                <div class="md-bar-meta">
+                  <span style="color:#5DCAA5;font-weight:700">42,9% pagado</span>
+                  <span style="color:#8892AA">libre Nov 2026</span>
+                </div>
+              </div>
+              <div class="md-list">
+                <div class="md-item">
+                  <div class="ic" style="background:rgba(240,153,123,0.2);color:#F0997B"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="13" rx="2.5"/><path d="M2 10h20"/></svg></div>
+                  <div class="md-item-body">
+                    <div class="md-item-name">Visa Galicia</div>
+                    <div class="md-item-meta">85% TNA · vence 5</div>
+                  </div>
+                  <div class="md-item-amt" style="color:#F0997B">$32M</div>
+                </div>
+                <div class="md-item">
+                  <div class="ic" style="background:rgba(239,159,39,0.2);color:#EF9F27"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10l9-6 9 6M5 10v8M19 10v8M3 20h18"/></svg></div>
+                  <div class="md-item-body">
+                    <div class="md-item-name">Préstamo MP</div>
+                    <div class="md-item-meta">62% TNA · vence 12</div>
+                  </div>
+                  <div class="md-item-amt" style="color:#EF9F27">$15M</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Plan -->
+      <article class="feature-card reveal">
+        <div>
+          <div class="feature-icon yellow">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4l6 6c-3 3-7 5-10 5l-3-3c0-3 2-7 5-10z"/><path d="M9 11L4 16l4 4 5-5"/></svg>
+          </div>
+          <h3 class="feature-title">Plan de pago inteligente</h3>
+          <p class="feature-desc">Elegí entre Avalancha (más ahorro) o Bola de nieve (más motivador). La app te muestra el orden óptimo y la fecha exacta de salida.</p>
+        </div>
+        <div class="feature-mock">
+          <div class="phone">
+            <div class="phone-statusbar"><span class="ph-num">9:41</span><span class="icons">●●●</span></div>
+            <div class="phone-content" style="padding:0 12px">
+              <div class="mp-title">Tu plan</div>
+              <div class="mp-sub">Estrategia para salir de deudas</div>
+              <div class="mp-hero">
+                <div class="mp-hero-eyebrow"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V5M4 5l5-2 5 2 5-2v10l-5 2-5-2-5 2"/></svg> LIBRE DE DEUDA</div>
+                <div class="mp-hero-val">Noviembre 2026</div>
+                <div class="mp-hero-sub ph-num">en <b style="color:#EEF0F5">8 meses</b> · ahorrás <b style="color:#5DCAA5">$2.4M</b></div>
+              </div>
+              <div class="mp-toggle">
+                <div class="mp-toggle-opt on"><div class="l">Avalancha</div><div class="s">Más eficiente</div></div>
+                <div class="mp-toggle-opt"><div class="l">Bola</div><div class="s">Motivador</div></div>
+              </div>
+              <div class="mp-list">
+                <div class="mp-item">
+                  <div class="mp-rank" style="background:rgba(242,107,107,0.2);color:#F26B6B">1</div>
+                  <div class="mp-item-body">
+                    <div><div class="mp-item-name">Naranja X</div><div class="mp-item-meta">95% TNA · 4 meses</div></div>
+                    <div class="mp-item-amt" style="color:#F26B6B">$10M</div>
+                  </div>
+                </div>
+                <div class="mp-item">
+                  <div class="mp-rank" style="background:rgba(240,153,123,0.2);color:#F0997B">2</div>
+                  <div class="mp-item-body">
+                    <div><div class="mp-item-name">Visa Galicia</div><div class="mp-item-meta">85% TNA · 12 meses</div></div>
+                    <div class="mp-item-amt" style="color:#F0997B">$32M</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Mes -->
+      <article class="feature-card reveal reveal-delay-1">
+        <div>
+          <div class="feature-icon blue">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h13a1 1 0 0 1 1 1v2"/><path d="M3 7v10a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-9a1 1 0 0 0-1-1H5a2 2 0 0 1-2-2z"/></svg>
+          </div>
+          <h3 class="feature-title">Controlá tu mes</h3>
+          <p class="feature-desc">Ingresos, gastos fijos y variables en una sola vista. Mirá cuánto te queda libre y compará mes a mes para ajustar tus hábitos.</p>
+        </div>
+        <div class="feature-mock">
+          <div class="phone">
+            <div class="phone-statusbar"><span class="ph-num">9:41</span><span class="icons">●●●</span></div>
+            <div class="phone-content" style="padding:0 12px">
+              <div class="mp-title">Tu mes</div>
+              <div class="mp-sub">Abril 2026 · día 5 de 30</div>
+              <div class="mm-hero">
+                <div class="mm-hero-label">DISPONIBLE</div>
+                <div class="mm-hero-val">$70.000</div>
+                <div class="mm-hero-sub ph-num">de $1.500.000 de ingreso</div>
+                <div class="mm-segments">
+                  <div style="width:63%;background:#F0997B"></div>
+                  <div style="width:32%;background:#EF9F27"></div>
+                  <div style="width:5%;background:#5DCAA5"></div>
+                </div>
+                <div class="mm-segs-meta">
+                  <div class="mm-seg-meta">
+                    <div class="mm-seg-row"><span class="sw" style="background:#F0997B"></span> Fijos</div>
+                    <div class="v">$950k</div>
+                  </div>
+                  <div class="mm-seg-meta">
+                    <div class="mm-seg-row"><span class="sw" style="background:#EF9F27"></span> Variables</div>
+                    <div class="v">$480k</div>
+                  </div>
+                  <div class="mm-seg-meta">
+                    <div class="mm-seg-row"><span class="sw" style="background:#5DCAA5"></span> Libre</div>
+                    <div class="v" style="color:#5DCAA5">$70k</div>
+                  </div>
+                </div>
+              </div>
+              <div class="mm-cats">
+                <div class="mm-cat">
+                  <div class="ic" style="background:rgba(240,153,123,0.2);color:#F0997B"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7v9H3z"/></svg></div>
+                  <div class="mm-cat-body"><div class="mm-cat-name">Alquiler</div><div class="mm-cat-pct">33% del ingreso</div></div>
+                  <div class="mm-cat-amt">$500k</div>
+                </div>
+                <div class="mm-cat">
+                  <div class="ic" style="background:rgba(93,202,165,0.2);color:#5DCAA5"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 0 1-15 6.7L3 16M3 12a9 9 0 0 1 15-6.7L21 8"/></svg></div>
+                  <div class="mm-cat-body"><div class="mm-cat-name">Deudas</div><div class="mm-cat-pct">23,8% del ingreso</div></div>
+                  <div class="mm-cat-amt">$357k</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ── CÓMO FUNCIONA ──────────────────────────────────────── -->
+<section class="steps" id="como-funciona">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-eyebrow">Cómo funciona</span>
+      <h2 class="section-title">Tres pasos. Empezás hoy.</h2>
+      <p class="section-sub">No hace falta vincular cuentas bancarias. Tus datos quedan en tu celular.</p>
+    </div>
+
+    <div class="step-grid">
+      <div class="step-card reveal">
+        <div class="step-num">1</div>
+        <h3 class="step-title">Cargá tus deudas</h3>
+        <p class="step-desc">Tarjetas, préstamos personales, cuotas. La app calcula intereses y armá el plan automáticamente.</p>
+        <div class="step-illust">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+            <rect x="8" y="14" width="32" height="22" rx="3" stroke="#5DCAA5" stroke-width="2"/>
+            <rect x="8" y="20" width="32" height="3" fill="#5DCAA5"/>
+            <rect x="13" y="28" width="10" height="3" rx="1" fill="#B8C2D9"/>
+            <circle cx="34" cy="14" r="6" fill="#0F1629" stroke="#162040" stroke-width="2"/>
+            <path d="M31.5 14l1.7 1.5 3-3" stroke="#5DCAA5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="step-card reveal reveal-delay-1">
+        <div class="step-num">2</div>
+        <h3 class="step-title">Elegí tu estrategia</h3>
+        <p class="step-desc">Avalancha (ahorrás más en intereses) o Bola de nieve (te dará impulso). Vos decidís.</p>
+        <div class="step-illust">
+          <svg width="64" height="48" viewBox="0 0 64 48" fill="none">
+            <path d="M8 36 L20 24 L32 30 L44 14 L56 18" stroke="#EF9F27" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="20" cy="24" r="3" fill="#EF9F27"/>
+            <circle cx="32" cy="30" r="3" fill="#EF9F27"/>
+            <circle cx="44" cy="14" r="4" fill="#5DCAA5"/>
+            <path d="M8 40 L56 40" stroke="#162040" stroke-width="1.5"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="step-card reveal reveal-delay-2">
+        <div class="step-num">3</div>
+        <h3 class="step-title">Registrá tus pagos</h3>
+        <p class="step-desc">Cada vez que pagás, la app actualiza tu plan y la fecha en que vas a estar libre. Sin sorpresas.</p>
+        <div class="step-illust">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+            <circle cx="24" cy="24" r="16" stroke="#5DCAA5" stroke-width="2"/>
+            <path d="M16 25 L22 31 L33 18" stroke="#5DCAA5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── DIFERENCIADORES ────────────────────────────────────── -->
+<section class="diff" id="por-que">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-eyebrow">Por qué ChauDeuda</span>
+      <h2 class="section-title">Pensada en serio,<br/>para vos.</h2>
+    </div>
+
+    <div class="diff-grid">
+      <div class="diff-card reveal">
+        <div class="diff-card-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M5.5 5.5l13 13"/></svg></div>
+        <div>
+          <h3 class="diff-title">Gratis sin publicidad</h3>
+          <p class="diff-desc">Una app de finanzas no debería tener anuncios. Punto. Tu plata, tu pantalla.</p>
+        </div>
+      </div>
+
+      <div class="diff-card reveal reveal-delay-1">
+        <div class="diff-card-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div>
+        <div>
+          <h3 class="diff-title">Datos privados</h3>
+          <p class="diff-desc">Tus datos viven en tu celular. No vinculamos cuentas bancarias ni vendemos información.</p>
+        </div>
+      </div>
+
+      <div class="diff-card reveal reveal-delay-2">
+        <div class="diff-card-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div>
+        <div>
+          <h3 class="diff-title">Hecha para Argentina</h3>
+          <p class="diff-desc">Pesos, TNA real, jerga local. Pensada para tarjetas y préstamos del mercado argentino.</p>
+        </div>
+      </div>
+
+      <div class="diff-card reveal">
+        <div class="diff-card-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 1 1 12 0c0 5 2 6 2 6H4s2-1 2-6z"/><path d="M10 18a2 2 0 0 0 4 0"/></svg></div>
+        <div>
+          <h3 class="diff-title">Notificaciones útiles</h3>
+          <p class="diff-desc">Te avisa antes de cada vencimiento. Nunca más una mora por olvido.</p>
+        </div>
+      </div>
+
+      <div class="diff-card reveal reveal-delay-1">
+        <div class="diff-card-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div>
+        <div>
+          <h3 class="diff-title">Comparador de estrategias</h3>
+          <p class="diff-desc">Mirá en tiempo real cuánto cambia tu fecha de salida con Avalancha vs Bola de nieve.</p>
+        </div>
+      </div>
+
+      <div class="diff-card reveal reveal-delay-2">
+        <div class="diff-card-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></div>
+        <div>
+          <h3 class="diff-title">Simple y sin vueltas</h3>
+          <p class="diff-desc">Sin menús complicados. Cargás tus datos una vez y después solo registrás pagos. La app hace el resto.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA FINAL ──────────────────────────────────────────── -->
+<section class="cta" id="descargar">
+  <div class="container">
+    <div class="cta-card reveal">
+      <h2 class="cta-title">Decile chau<br/>a tus deudas.</h2>
+      <p class="cta-sub">Sumate a los miles de argentinos que ya están camino a la libertad financiera.</p>
+      <div class="cta-actions">
+        <a href="https://play.google.com/store/apps/details?id=com.chaudeuda.chaudeuda" target="_blank" class="btn btn-play btn-lg">
+          <span class="gp-mark">
+            <svg width="22" height="24" viewBox="0 0 22 24" fill="none">
+              <path d="M1.4 1.5C1.1 1.8 1 2.3 1 2.9v18.2c0 .6.1 1.1.4 1.4l.1.1L11 12.6v-.2L1.5 1.4l-.1.1z" fill="#0F1629"/>
+              <path d="M14 15.7L11 12.6v-.2L14 9.3l.1.1 4.2 2.4c1.2.7 1.2 1.8 0 2.5L14 15.7z" fill="#5DCAA5"/>
+              <path d="M14.1 15.6L11 12.5 1.4 22.5c.4.4 1.1.5 1.8.1l11-6.3-.1-.7z" fill="#F0997B"/>
+              <path d="M14.1 9.4l-11-6.3c-.7-.4-1.4-.3-1.8.1L11 12.5l3.1-3.1z" fill="#EF9F27"/>
+            </svg>
+          </span>
+          <span class="gp-text">
+            <small>DESCARGAR EN</small>
+            <span>Google Play</span>
+          </span>
+        </a>
+      </div>
+      <p class="cta-trust">Gratis · Sin publicidad · Sin tarjeta de crédito</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ── FOOTER ─────────────────────────────────────────────── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <a class="brand" href="#top">
+          <span class="brand-mark" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <path d="M12 2v20M8 6h5a3 3 0 0 1 0 6H9a3 3 0 0 0 0 6h5" stroke="#0F1629" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M7 13l3 3 7-7" stroke="#5DCAA5" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          ChauDeuda
+        </a>
+        <p class="footer-brand-text">La app argentina para salir de tus deudas.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://rrrbvzla.github.io/chaudeuda-privacy/">Política de privacidad</a>
+        <a href="https://rrrbvzla.github.io/chaudeuda-privacy/">Términos</a>
+        <a href="mailto:estudiossrrdev@gmail.com">Contacto</a>
+        <a href="https://play.google.com/store/apps/details?id=com.chaudeuda.chaudeuda" target="_blank">Play Store</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ChauDeuda. Todos los derechos reservados.</span>
+      <span>Hecho con ☕ en Argentina</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Sticky nav shadow
+  const nav = document.getElementById('nav');
+  const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 8);
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // Reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
 </body>
 </html>
